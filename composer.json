@@ -1,0 +1,60 @@
+{
+    "name": "ahinkle/auto-resolvable-blade-components",
+    "description": "A Laravel package to automatically resolve your Blade Component views based on the component class names.",
+    "keywords": [
+        "ahinkle",
+        "auto",
+        "blade",
+        "resolvable",
+        "views",
+        "laravel",
+        "components",
+        "component"
+    ],
+    "homepage": "https://github.com/ahinkle/auto-resolvable-blade-components",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Andy Hinkle",
+            "email": "ahinkle10@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2|^8.0",
+        "illuminate/support": "^7.0|^8.0",
+        "illuminate/view": "^7.0|^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0|^6.0",
+        "phpunit/phpunit": "^9.0",
+        "illuminate/container": "^7.0|^8.0",
+        "illuminate/contracts": "^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ahinkle\\AutoResolvableComponents\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ahinkle\\AutoResolvableComponents\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [        
+                "Ahinkle\\AutoResolvableComponents\\AutoResolvableComponentsServiceProvider"
+            ]
+        }
+    }
+}
