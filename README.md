@@ -1,7 +1,8 @@
 # Auto Resolvable Laravel Blade Components
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/ahinkle/auto-resolvable-bladec-omponents.svg?style=flat-square)](https://packagist.org/packages/ahinkle/auto-resolvable-bladec-omponents)
-[![Total Downloads](https://img.shields.io/packagist/dt/ahinkle/auto-resolvable-bladec-omponents.svg?style=flat-square)](https://packagist.org/packages/ahinkle/auto-resolvable-bladec-omponents)
+[![Build](https://github.com/ahinkle/auto-resolvable-blade-components/workflows/tests/badge.svg)](https://github.com/ahinkle/auto-resolvable-blade-components/actions)
+[![Latest Version](https://img.shields.io/packagist/v/ahinkle/auto-resolvable-blade-components.svg?style=flat-square)](https://packagist.org/packages/ahinkle/auto-resolvable-blade-components)
+[![Total Downloads](https://img.shields.io/packagist/dt/ahinkle/auto-resolvable-blade-components.svg?style=flat-square)](https://packagist.org/packages/ahinkle/auto-resolvable-blade-components)
 
 Automatically resolve your Blade Component views based on the component class names to allow for cleaner components. 
 
