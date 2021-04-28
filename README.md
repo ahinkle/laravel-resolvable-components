@@ -13,7 +13,7 @@ This package was built on common architecture patterns between Laravel Component
 
 namespace App\View\Components;
 
-use Ahinkle/AutoResolvableComponents/AutoResolvableComponent;
+use Ahinkle\AutoResolvableComponents\AutoResolvableComponent;
 
 class Alert extends AutoResolvableComponent
 {
@@ -47,7 +47,7 @@ composer require ahinkle/auto-resolvable-blade-components
 Simply extend the `AutoResolvableComponent` class (vs. `component`) on your Blade Component:
 
 ```php
-use Ahinkle/AutoResolvableComponents/AutoResolvableComponent;
+use Ahinkle\AutoResolvableComponents\AutoResolvableComponent;
 
 class Alert extends AutoResolvableComponent
 {
