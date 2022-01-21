@@ -4,7 +4,7 @@
 [![Latest Version](https://img.shields.io/packagist/v/ahinkle/auto-resolvable-blade-components.svg?style=flat-square)](https://packagist.org/packages/ahinkle/auto-resolvable-blade-components)
 [![Total Downloads](https://img.shields.io/packagist/dt/ahinkle/auto-resolvable-blade-components.svg?style=flat-square)](https://packagist.org/packages/ahinkle/auto-resolvable-blade-components)
 
-Automatically resolve your Blade Component views based on the component class names to allow for cleaner components. 
+Automatically resolve your Blade Component views based on the component class names to allow for cleaner components.
 
 This package was built on common architecture patterns between Laravel Components and Livewire Components. Livewire automatically resolves the Blade Views whereas Laravel Components do not and require the `render()` method. This simple but useful package solves that.
 
@@ -34,11 +34,12 @@ composer require ahinkle/auto-resolvable-blade-components
 
 ### Package Support
 
-| PHP Version | Laravel v7.0            | Laravel v8.0               |
-|-------------|-------------------------|----------------------------|
-| 7.3         | ^1.0 :white_check_mark: |  ^1.0 :white_check_mark:   |
-| 7.4         | ^1.0 :white_check_mark: |  ^1.0 :white_check_mark:   |
-| 8.0         | ^1.0 :white_check_mark: |  ^1.0 :white_check_mark:   |
+| PHP Version | Laravel v7.0            | Laravel v8.0               | Laravel v9.0               |
+|-------------|-------------------------|----------------------------|----------------------------|
+| 7.3         | ^1.0 :white_check_mark: |  ^1.0 :white_check_mark:   | :no_entry: Unsupported     |
+| 7.4         | ^2.0 :white_check_mark: |  ^2.0 :white_check_mark:   | :no_entry: Unsupported     |
+| 8.0         | ^2.0 :white_check_mark: |  ^2.0 :white_check_mark:   | ^2.0 :white_check_mark:    |
+| 8.1         | ^2.0 :white_check_mark: |  ^2.0 :white_check_mark:   | ^2.0 :white_check_mark:    |
 
 > Laravel components were introduced in 7.0.
 
