@@ -1,12 +1,10 @@
 name: tests
 
-on:
-  push:
-  pull_request:
+on: [push, pull_request]
 
 jobs:
-  tests:
-    runs-on: ubuntu-latest
+  test:
+    runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: true
       matrix:
@@ -43,7 +41,8 @@ jobs:
           coverage: none
 
       - name: Install dependencies
-        run: composer require "illuminate/contracts=${{ matrix.laravel }}" --prefer-dist --no-interaction
-
+        run: |
+          composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
+          composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction
       - name: Execute tests
-        run: vendor/bin/phpunit --verbose
+        run: vendor/bin/phpunit
