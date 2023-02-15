@@ -1,5 +1,5 @@
 {
-    "name": "ahinkle/auto-resolvable-blade-components",
+    "name": "ahinkle/laravel-resolvable-components",
     "description": "A Laravel package to automatically resolve your Blade Component views based on the component class names.",
     "keywords": [
         "ahinkle",
@@ -11,7 +11,7 @@
         "components",
         "component"
     ],
-    "homepage": "https://github.com/ahinkle/auto-resolvable-blade-components",
+    "homepage": "https://github.com/ahinkle/laravel-resolvable-components",
     "license": "MIT",
     "type": "library",
     "authors": [
