@@ -8,6 +8,7 @@ use Illuminate\Container\Container;
 use Illuminate\Contracts\View\Factory as FactoryContract;
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\HtmlString;
+use Illuminate\View\Component;
 use Illuminate\View\Factory;
 use Illuminate\View\View;
 use Mockery as m;
@@ -43,6 +44,10 @@ class AutoResolvableComponentTest extends TestCase
         Facade::clearResolvedInstances();
         Facade::setFacadeApplication(null);
         Container::setInstance(null);
+        Component::flushCache();
+        Component::forgetFactory();
+
+        parent::tearDown();
     }
 
     /** @test */
