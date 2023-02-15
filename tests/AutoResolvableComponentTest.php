@@ -58,7 +58,7 @@ class AutoResolvableComponentTest extends TestCase
         $this->viewFactory->shouldReceive('addNamespace')->once()->with('__components', '/tmp');
 
         $component = new TestInlineViewComponent();
-        $this->assertSame('__components::c6327913fef3fca4518bcd7df1d0ff630758e241', $component->resolveView());
+        $this->assertSame('__components::57b7a54afa0eb51fd9b88eec031c9e9e', $component->resolveView());
     }
 
     /** @test */
