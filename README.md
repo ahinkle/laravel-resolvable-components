@@ -34,14 +34,13 @@ composer require ahinkle/auto-resolvable-blade-components
 
 ### Package Support
 
-| PHP Version | Laravel v7.0            | Laravel v8.0               | Laravel v9.0               |
-|-------------|-------------------------|----------------------------|----------------------------|
-| 7.3         | ^1.0 :white_check_mark: |  ^1.0 :white_check_mark:   | :no_entry: Unsupported     |
-| 7.4         | ^2.0 :white_check_mark: |  ^2.0 :white_check_mark:   | :no_entry: Unsupported     |
-| 8.0         | ^2.0 :white_check_mark: |  ^2.0 :white_check_mark:   | ^2.0 :white_check_mark:    |
-| 8.1         | ^2.0 :white_check_mark: |  ^2.0 :white_check_mark:   | ^2.0 :white_check_mark:    |
-
-> Laravel components were introduced in 7.0.
+| PHP Version | Laravel v8.0               | Laravel v9.0               | Laravel v10.0               |
+|-------------|----------------------------|----------------------------|-----------------------------|
+| 7.3         |  ^1.0 :white_check_mark:   | :no_entry: Unsupported     | :no_entry: Unsupported      |
+| 7.4         |  ^2.0 :white_check_mark:   | :no_entry: Unsupported     | :no_entry: Unsupported      |
+| 8.0         |  ^2.0 :white_check_mark:   | ^2.0 :white_check_mark:    | :no_entry: Unsupported      |
+| 8.1         |  ^2.0 :white_check_mark:   | ^2.0 :white_check_mark:    | ^3.0 :white_check_mark:     |
+| 8.2         |  ^2.0 :white_check_mark:   | ^2.0 :white_check_mark:    | ^3.0 :white_check_mark:     |
 
 ## Usage
 
