@@ -32,16 +32,6 @@ You can install the package via composer:
 composer require ahinkle/auto-resolvable-blade-components
 ```
 
-### Package Support
-
-| PHP Version | Laravel v8.0               | Laravel v9.0               | Laravel v10.0               |
-|-------------|----------------------------|----------------------------|-----------------------------|
-| 7.3         |  ^1.0 :white_check_mark:   | :no_entry: Unsupported     | :no_entry: Unsupported      |
-| 7.4         |  ^2.0 :white_check_mark:   | :no_entry: Unsupported     | :no_entry: Unsupported      |
-| 8.0         |  ^2.0 :white_check_mark:   | ^2.0 :white_check_mark:    | :no_entry: Unsupported      |
-| 8.1         |  ^2.0 :white_check_mark:   | ^2.0 :white_check_mark:    | ^3.0 :white_check_mark:     |
-| 8.2         |  ^2.0 :white_check_mark:   | ^2.0 :white_check_mark:    | ^3.0 :white_check_mark:     |
-
 ## Usage
 
 Simply extend the `AutoResolvableComponent` class (vs. `component`) on your Blade Component:
