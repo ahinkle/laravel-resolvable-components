@@ -4,6 +4,7 @@ namespace Ahinkle\AutoResolvableBladeComponents\Tests;
 
 use Orchestra\Testbench\TestCase;
 use Ahinkle\AutoResolvableComponents\AutoResolvableComponentsServiceProvider;
+use PHPUnit\Framework\Attributes\Test;
 
 class ExampleTest extends TestCase
 {
@@ -12,7 +13,7 @@ class ExampleTest extends TestCase
         return [AutoResolvableComponentsServiceProvider::class];
     }
     
-    /** @test */
+    #[Test]
     public function true_is_true()
     {
         $this->assertTrue(true);
