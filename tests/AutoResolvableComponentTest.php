@@ -13,6 +13,7 @@ use Illuminate\View\Factory;
 use Illuminate\View\View;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\Attributes\Test;
 
 class AutoResolvableComponentTest extends TestCase
 {
@@ -50,7 +51,7 @@ class AutoResolvableComponentTest extends TestCase
         parent::tearDown();
     }
 
-    /** @test */
+    #[Test]
     public function it_can_extend_with_inline_view_component()
     {
         $this->config->shouldReceive('get')->once()->with('view.compiled')->andReturn('/tmp');
@@ -61,7 +62,7 @@ class AutoResolvableComponentTest extends TestCase
         $this->assertSame('__components::57b7a54afa0eb51fd9b88eec031c9e9e', $component->resolveView());
     }
 
-    /** @test */
+    #[Test]
     public function it_returns_regular_view()
     {
         $view = m::mock(View::class);
@@ -72,7 +73,7 @@ class AutoResolvableComponentTest extends TestCase
         $this->assertSame($view, $component->resolveView());
     }
 
-    /** @test */
+    #[Test]
     public function it_returns_regular_view_name()
     {
         $this->viewFactory->shouldReceive('exists')->once()->andReturn(true);
@@ -83,7 +84,7 @@ class AutoResolvableComponentTest extends TestCase
         $this->assertSame('alert', $component->resolveView());
     }
 
-    /** @test */
+    #[Test]
     public function it_resolves_missing_render_view()
     {
         $view = m::mock(View::class);
